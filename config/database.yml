@@ -1,0 +1,28 @@
+development:
+  adapter: postgresql
+  encoding: unicode
+  database: towfauth_development
+  pool: 5
+  host: localhost
+  username: towfauth
+  password: towfauth
+
+test:
+  adapter: postgresql
+  encoding: unicode
+  database: towfauth_test
+  pool: 5
+  host: localhost
+  username: towfauth
+  password: towfauth
+  
+production:
+  adapter: postgresql
+  encoding: unicode
+  database: towfauth_production
+  pool: 5
+  host: localhost
+  username: towfauth
+  password: ENV["DB_PASSWORD"]
+  
+
