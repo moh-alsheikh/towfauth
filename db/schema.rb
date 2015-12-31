@@ -40,6 +40,7 @@ ActiveRecord::Schema.define(version: 20151230163227) do
     t.string   "country_code"
     t.string   "mobile_no"
     t.boolean  "sign_up_completed",      default: false
+    t.boolean  "sign_in_completed",      default: false
   end
 
   add_index "users", ["email"], name: "index_users_on_email", unique: true, using: :btree

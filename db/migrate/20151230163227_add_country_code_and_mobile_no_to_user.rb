@@ -3,5 +3,6 @@ class AddCountryCodeAndMobileNoToUser < ActiveRecord::Migration
     add_column :users, :country_code, :string
     add_column :users, :mobile_no, :string
     add_column :users, :sign_up_completed, :boolean,default: false
+    add_column :users, :sign_in_completed, :boolean,default: false
   end
 end
